@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+:root{
+    --bg-nav: #364f6b;
+    --bg-hover: #3fc1c9;
+    --bg-body: #e7f5fe;
+    --icon-color: #89c8e6;
+    --text-color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url('/img/bg.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    user-select: none;
+    overflow: hidden;
+   
+}
+
+.nav{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.nav img{
+    width: 200px;
+    margin: 5px;
+}
+
+.container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.download-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2732;
+    box-shadow: 0px 2px 20px 8px #45718691;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 40%;
+}
+
+.download-container .download-info{
+    border: 2px dashed var(--bg-body);
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 0; 
+    transition: all .2s;
+}
+
+
+
+
+
+.file-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.download__meta{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.send-btn-container a{
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 5px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background: white;
+    color: #3f687a;
+    font-weight: 500;
+    font-family: BlinkMacSystemFont, 'Segoe UI';
+}
+
+.send-btn-container a:hover{
+    transition: .2s;
+    background: #3f687a;
+    color: white;
+}
+
+@media(max-width: 400px){
+    .container{
+        flex-direction: column-reverse;
+        height: 70vh;
+        justify-content: center;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+    
+    .download-container{
+        width: 78%;
+    }
+
+    .download-info h2{
+        font-size: 16px;
+    }
+
+    .download-info img{
+        width: 80px;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        flex-direction: column-reverse;
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+    
+    .download-container{
+        width: 78%;
+    }
+
+    .download-info h2{
+        font-size: 18px;
+    }
+
+    .download-info img{
+        width: 80px;
+    }
+}
+
+@media(max-width: 321px){
+    .container{
+        flex-direction: column-reverse;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+    
+    .download-container{
+        width: 78%;
+    }
+
+    .download-info h2{
+        font-size: 16px;
+    }
+
+    .download-info img{
+        width: 80px;
+    }
+}
+
+@media(max-width: 770px){
+    .container{
+        flex-direction: column-reverse;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+    
+    .download-container{
+        width: 78%;
+    }
+
+    .download-info h2{
+        font-size: 16px;
+    }
+
+    .download-info img{
+        width: 80px;
+    }
+}
