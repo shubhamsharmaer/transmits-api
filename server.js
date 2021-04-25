@@ -11,7 +11,7 @@ const connectDB = require('./config/db');
 connectDB();
 // Cors
 const corsOptions = {
-    origin: process.env.ALLOWED_CLIENTS.split(',')
+    origin: ['http://127.0.0.1:3000','http://localhost:3000','http://localhost:5000']
 }
 app.use(cors(corsOptions));
 // Template engine
