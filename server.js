@@ -9,7 +9,6 @@ app.use(express.json());
 // Database connection
 const connectDB = require('./config/db');
 connectDB();
-
 // Cors
 const corsOptions = {
     origin: process.env.ALLOWED_CLIENTS.split(',')
